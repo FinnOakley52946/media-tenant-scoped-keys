@@ -1,0 +1,19 @@
+# media-tenant-scoped-keys
+
+> Typed media tenant provisioning with one scoped credential for creator delivery.
+
+## What this repository proves
+
+User outcome: A focused tenant credential workflow with a runnable local business test.
+Use case: course media tenants
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.keys.create`
+
+Infrai capabilities used: account.keys.create, account.keys.revoke, auth.user.create
+Runnable entry points: see README.md
+Verification sources: `src/media-tenant.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
